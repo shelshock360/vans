@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Aluno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-input type="text"  [(ngModel)]="aluno.nome"  placeholder="Nome" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="aluno.telefone"  placeholder="Telefone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="aluno.picture"  placeholder="Foto"></ion-input>
+    </ion-item>
+
+      <ion-item>
+        
+        <ion-input type="text"  [(ngModel)]="aluno.perildo"  placeholder="Perildo"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-input type="text"  [(ngModel)]="aluno.escola"  placeholder="Escola"></ion-input>
+        </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="saveAluno()" expand="block">
+      Salvar Aluno
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

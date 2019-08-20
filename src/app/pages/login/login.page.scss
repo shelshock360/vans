@@ -1,0 +1,58 @@
+.container{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin:0 auto;
+    z-index: 2;
+
+    &.top{
+        top:5%;
+    }
+
+    
+    &.bottom{
+        bottom:30%;
+        span{
+            color:white;
+        }
+    }
+}
+
+ion-slides{
+    height: 100%;
+
+    .slide-inner{
+
+        width: 75%;
+        color:white;
+        background-color:#f2ff00;
+        border-radius: 10px;
+
+        
+    }
+
+}
+
+.ocean{
+    position:absolute;
+    left:0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background-color:#8470FF;
+
+    .waves{
+
+        position: absolute;
+        top:-100px;
+        left:0;
+        right: 0;
+        height: 100px;
+        background-size: contain;
+        transition: 1ms;
+    }
+
+ 
+}
